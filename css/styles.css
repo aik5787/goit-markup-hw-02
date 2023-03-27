@@ -1,7 +1,7 @@
 /* Delete markers */
-ul {
+/* ul {
   list-style: none;
-}
+} */
 
 /* Variable colors */
 
@@ -27,6 +27,11 @@ ul {
 
 /* Body */
 
+.link {
+  text-decoration: none;
+  list-style: none;
+}
+
 body {
   font-family: Roboto, sans-serif;
   color: var(--text-color);
@@ -51,7 +56,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color-first-part);
-  text-decoration: none;
 }
 
 .logo-part-two {
@@ -61,31 +65,33 @@ body {
 /* Navigation */
 
 .menu-link {
-  /* font-style: normal; */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  text-decoration: none;
 }
 
-.menu-link:active,
-.mail-active:active {
+.menu-link:hover,
+.mail-link:focus {
   color: var(--active-link-color);
-  text-decoration: underline;
 }
 
 /* Contacts */
 
-.contacts {
+.address {
   font-style: normal;
-  /* font-weight: 400; */
+}
+.contacts {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-decoration: none;
   color: inherit;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--active-link-color);
 }
 
 /* Hero */
