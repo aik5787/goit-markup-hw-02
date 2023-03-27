@@ -113,7 +113,7 @@ body {
 }
 
 .order-service-link {
-  /* font-style: normal; */
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -122,9 +122,11 @@ body {
   letter-spacing: 0.04em;
   color: var(--button-text-color);
   background: var(--button-background-color);
+  cursor: pointer;
 }
 
-.order-service-link:hover {
+.order-service-link:hover,
+.order-service-link:focus {
   background: var(--button-background-hover-color);
 }
 
@@ -155,17 +157,19 @@ body {
 .feature-text,
 .card-content-position,
 .portfolio-text {
-  /* font-style: normal; */
-  /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--text-color);
 }
 
 /* Team */
 
 .section-team {
   background-color: var(--section-background-color);
+}
+.photo {
+  background-color: #ffffff;
 }
 
 /* Footer */
@@ -190,7 +194,8 @@ body {
 /* Portfolio */
 
 .button-filter {
-  font-weight: 600;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   display: flex;
@@ -199,12 +204,13 @@ body {
   letter-spacing: 0.04em;
   color: var(--button-filter-text-color);
   background-color: var(--button-filter-background-color);
+  cursor: pointer;
 }
 
 .button-filter:hover,
 .button-filter:focus {
   color: #ffffff;
-  background-color: #4d5ae5;
+  background-color: var(--active-link-color);
 }
 
 .portfolo-title {
